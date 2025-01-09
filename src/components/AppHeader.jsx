@@ -9,22 +9,26 @@ function AppHeader() {
         },
         {
             path: "/posts",
-            title: "AppArticles"
+            title: "Articles"
         },
         {
             path: "/about",
             title: "About"
         }
-        
+
     ]
 
     return (
         <header>
-            <ul>
-                {list.map((curPage) => (
-                    <li key={curPage.title}><NavLink to={curPage.path}>{curPage.title}</NavLink></li>
-                ))}
-            </ul>
+            <nav>
+                <div className="container">
+                    <ul>
+                        {list.map((curPage) => (
+                            <li key={curPage.title}><NavLink to={curPage.path}>{curPage.title}</NavLink></li>
+                        ))}
+                    </ul>
+                </div>
+            </nav>
         </header>
     )
 }

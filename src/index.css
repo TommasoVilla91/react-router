@@ -59,6 +59,33 @@ button {
   cursor: pointer;
   border: none;
 }
+a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  background-color: rgb(179, 215, 247);
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+a.active {
+  background-color: yellow;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  width: calc(100% / 3);
+}
+
+/* HEADER */
+header {
+  margin-bottom: 1rem;
+  padding: 1rem 0 1rem 0;
+  background-color: rgb(156, 204, 247);
+}
 
 /* MAIN */
 label {
