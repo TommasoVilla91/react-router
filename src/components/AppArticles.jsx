@@ -109,7 +109,7 @@ function AppArticles() {
   };
 
   return (
-    <>
+    <main>
       <div className="container">
         <section>
           <select name="tag" id="" value={filter} onChange={(event) => setFilter(event.target.value)}>
@@ -191,7 +191,7 @@ function AppArticles() {
           )}
         </div>
       </div>
-    </>
+    </main>
   )
 };
 
