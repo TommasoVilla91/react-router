@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import AppCard from "../components/AppCard";
+import AppCard from "../../components/AppCard";
 import { Link } from "react-router-dom";
 
 function ArticlesPage() {

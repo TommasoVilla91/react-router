@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function AppCard({article, onCancel}) {
 
 
@@ -15,9 +17,10 @@ function AppCard({article, onCancel}) {
                             <span className="tag" key={curIndex}>{curArticle}</span>
                         ))}
                     </div>
-                    <div>
+                    <div className="row2">
                         {/* tasto Elimina in cui nell'onClick metto la funzione removeElem */}
                         <button className="bnt-erase" onClick={onCancel}>Elimina</button>
+                        <Link className="info" to={`/posts/${article.id}`}>Info</Link>
                     </div>                    
                 </div>                
             </div>

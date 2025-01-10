@@ -186,3 +186,9 @@ label {
 .bnt-erase {
   background-color: rgb(233, 0, 0);
 }
+
+.info {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: sandybrown;
+}
