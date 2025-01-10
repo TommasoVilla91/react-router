@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AppArticles from "./components/AppArticles";
-import AppLayout from "./components/AppLayout";
-import Home from "./components/Home";
-import About from "./components/About";
+import ArticlesPage from "./pages/ArticlesPage";
+import AdminLayout from "./components/AdminLayout";
+import Dashboard from "./pages/Dashboard";
+import ArticleCreatorPage from "./pages/ArticleCreatorPage";
 
 function App() {
 
@@ -11,17 +11,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<AppLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/posts" element={<AppArticles />} />          
-          <Route path="/about" element={<About />} />
+        <Route element={<AdminLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="/posts">
+            <Route index element={<ArticlesPage />} />
+            <Route path="create" element={<ArticleCreatorPage />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
-
-    
-  
-  )
+  );
 };
 
-export default App
+export default App;

@@ -1,15 +1,14 @@
 import { Outlet } from "react-router-dom"
 import AppHeader from "./AppHeader";
 
-function AppLayout() {
+function AdminLayout() {
 
     return (
         <>
             <AppHeader />
-
             <Outlet />
         </>
     )
 }
 
-export default AppLayout;
+export default AdminLayout;

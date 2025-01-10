@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function AppHeader() {
 
-    const list = [
+    const navLinks = [
         {
             path: "/",
             title: "Home"
@@ -10,12 +10,7 @@ function AppHeader() {
         {
             path: "/posts",
             title: "Articles"
-        },
-        {
-            path: "/about",
-            title: "About"
         }
-
     ]
 
     return (
@@ -23,8 +18,10 @@ function AppHeader() {
             <nav>
                 <div className="container">
                     <ul>
-                        {list.map((curPage) => (
-                            <li key={curPage.title}><NavLink to={curPage.path}>{curPage.title}</NavLink></li>
+                        {navLinks.map((curPage) => (
+                            <li key={curPage.title}>
+                                <NavLink to={curPage.path}>{curPage.title}</NavLink>
+                            </li>
                         ))}
                     </ul>
                 </div>

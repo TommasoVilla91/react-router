@@ -30,6 +30,12 @@ h3 {
   gap: 0.5rem;
 }
 
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .text-label {
   display: block;
 }
@@ -88,6 +94,12 @@ header {
 }
 
 /* MAIN */
+.add {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.5rem;
+}
+
 label {
   margin-bottom: 0.5rem;
 }
