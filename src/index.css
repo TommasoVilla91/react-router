@@ -192,3 +192,8 @@ label {
   text-decoration: none;
   background-color: sandybrown;
 }
+
+.img-det {
+  width: 50%;
+  margin: 1rem 0;
+}

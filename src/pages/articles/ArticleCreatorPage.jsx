@@ -20,6 +20,8 @@ function ArticleCreatorPage() {
 
         axios.post(`http://localhost:3001/posts`, formData)
             .then((resp) => {
+                
+                // quando finisce riporta alla pagina degli articoli
                 navigate('/posts');
             });
     };
